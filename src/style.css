@@ -1,0 +1,102 @@
+@import url("fontface.css");
+* {
+    padding:0;
+    margin:0;
+}
+.clear {
+    clear:both;
+}
+
+body {
+    background:url(images/bg.jpg) repeat;
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+    color:#212713;
+}
+#wrap {
+    width:1300px;
+    margin:auto;
+}
+
+#sitename {
+    font: normal 46px chunk;
+    color:#1b2502;
+    text-shadow:#5d7a17 1px 1px 1px;
+    display:block;
+    padding:45px 0 0 0;
+    width:60%;
+    float:left;
+}
+#searchbar {
+    width:39%;
+    float:right;
+}
+#sitename em {
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+#top {
+    height:145px;
+}
+img {
+
+    width:90%;
+    height:250px;
+    padding:10px;
+    border:1px solid #000;
+    margin:0 0 0 50px;
+}
+
+
+.post h2 a {
+    color:#656f42;
+    text-decoration:none;
+}
+#searchbar {
+    padding:55px 0 0 0;
+}
+#searchfield {
+    background:url(images/searchbar.gif) no-repeat;
+    width:239px;
+    height:35px;
+    float:right;
+}
+#searchfield .keyword {
+    width:170px;
+    background:transparent;
+    border:none;
+    padding:8px 0 0 10px;
+    color:#fff;
+    display:block;
+    float:left;
+}
+#searchfield .searchbutton {
+    display:block;
+    float:left;
+    margin:7px 0 0 5px;
+}
+
+div.background
+{
+  background:url(h.jpg) repeat-x;
+  border: 2px solid black;
+
+  width:99%;
+}
+div.transbox
+{
+  margin: 15px;
+  background-color: #ffffff;
+
+  border: 1px solid black;
+  opacity:0.8;
+  filter:alpha(opacity=60); /* For IE8 and earlier */
+  height:500px;
+}
+
+.site{
+
+border:1px solid #CCC; 
+}
+
+.site a{text-decoration:none;font-weight:bold; color:#000; line-height:2}
+.site:hover{background:#000; border:1px solid #03C;}
+.site:hover a{color:#FFF}

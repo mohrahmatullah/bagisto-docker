@@ -1,0 +1,31 @@
+# Use root/example user/password credentials
+version: '3.1'
+
+services:
+  php_gist:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 1642:80
+    volumes:
+      - ./src:/var/www/html/
+
+  db_gist:
+    image: mysql:5.7
+    container_name: mysql_gistosscfisudiuf
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 1643:8080
+
+volumes:
+  mysql-data:
